@@ -80,7 +80,7 @@ class Ranker:
             elif self.method is "relevance_score":
                 print("relevance_score")
                 (distances, rank) = self.relevance_score(query, self.gallery, positive, negative)
-            elif self.method is "MM":
+            elif self.method is "MRS":
                 print("mean_relevance_score")
                 (distances, rank) = self.mean_rs(query, self.gallery, positive, negative)
             elif "PA" in self.method:
